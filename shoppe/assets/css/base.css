@@ -1,0 +1,35 @@
+/* Khai bao bien css  */
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+}
+
+/* Khai bao thuoc tinh chung cho ca trang  */
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; /* tuong duong voi 10px*/
+    line-height: 1.6rem; /* chieu cao chu mac dinh */
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto; /* tu dong can giua trong cac khoi*/
+}
+
+/* Truong hop khong dung width 1200px  */
+.grid__full-width {
+    width: 100%;
+}
+
+/* Nhung the nam trong the nay thi dan ngang ra  */
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}
