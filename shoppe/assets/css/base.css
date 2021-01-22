@@ -29,6 +29,7 @@ html {
     margin: 0 auto; /* tu dong can giua trong cac khoi*/
 }
 
+/* Reponsive  */
 /* Truong hop khong dung width 1200px  */
 .grid__full-width {
     width: 100%;
@@ -38,6 +39,20 @@ html {
 .grid__row {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+/* Test */
+.grid__column-2 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 16.667%;
+}
+.grid__column-10 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 83.333%;
 }
 
 /* Animation  */
@@ -99,7 +114,7 @@ html {
     outline: none;
     cursor: pointer;
     color: var(--text-color);
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     line-height: 1.6rem;
@@ -125,4 +140,61 @@ html {
     color: #949494;
     cursor: none;
     background-color: #c3c3c3;
+}
+
+/* selection  */
+.select-input {
+    position: relative;
+    height: 34px;
+    min-width: 200px;
+    padding: 0 12px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.select-input__label {
+    font-size: 1.4rem;
+}
+
+.select-input__icon {
+    font-size: 1.4rem;
+    color: rgba(131, 131, 131);
+    position: relative;
+    top: 1px;
+}
+
+.select-input:hover .select-input__list {
+    display: block;
+}
+
+.select-input__list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25px;
+    padding-left: 0;
+    list-style: none;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    padding: 8px 16px;
+    min-width: 200px;
+    display: none;
+}
+
+.select-input__item {
+}
+
+.select-input__link {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+}
+
+.select-input__link:hover {
+    color: var(--primary-color);
 }
