@@ -39,19 +39,19 @@ html {
 .grid__row {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -12px;
-    margin-right: -12px;
+    margin-left: -5px;
+    margin-right: -5px;
 }
 
 /* Test */
 .grid__column-2 {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 5px;
+    padding-right: 5px;
     width: 16.667%;
 }
 .grid__column-10 {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 5px;
+    padding-right: 5px;
     width: 83.333%;
 }
 
@@ -197,4 +197,69 @@ html {
 
 .select-input__link:hover {
     color: var(--primary-color);
+}
+
+/* Product Item  */
+.home-product-item {
+    background-color: var(--white-color);
+    margin-top: 10px;
+}
+
+/* Product img */
+.home-product-item__img {
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.home-product-item__name {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 400;
+    color: var(--text-color);
+    margin: 10px;
+    height: 3.6rem;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+/* Price product */
+.home-product-item__price {
+}
+
+.home-product-item__price-old {
+}
+
+.home-product-item__price-current {
+}
+
+/* Action */
+.home-product-item__action {
+}
+
+.home-product-item__like {
+}
+
+/* Thong tin san pham */
+.home-product-item__origin {
+}
+
+.home-product-item__brand {
+}
+
+.home-product-item__brand-name {
+}
+
+/* Sale-off */
+.home-product-item__sale-off {
+}
+
+.home-product-item__percent {
+}
+
+.home-product-item__label {
 }
